@@ -1,0 +1,12 @@
+<VRTDataset rasterXSize="304" rasterYSize="448"> 
+  <VRTRasterBand dataType="Byte" band="1" subClass="VRTRawRasterBand"> 
+    <SourceFilename relativetoVRT="1">nt_20130105_f17_v01_n.bin</SourceFilename> 
+    <ImageOffset>300</ImageOffset> 
+    <PixelOffset>1</PixelOffset> 
+    <LineOffset>304</LineOffset> 
+  </VRTRasterBand> 
+  <SRS>PROJCS["NSIDC Sea Ice Polar Stereographic North",GEOGCS["Unspecified datum based upon the Hughes 1980 ellipsoid",DATUM["Not_specified_based_on_Hughes_1980_ellipsoid",SPHEROID["Hughes 1980",6378273,298.279411123064,AUTHORITY["EPSG","7058"]],AUTHORITY["EPSG","6054"]],PRIMEM["Greenwich",0,AUTHORITY["EPSG","8901"]],UNIT["degree",0.01745329251994328,AUTHORITY["EPSG","9122"]],AUTHORITY["EPSG","4054"]],UNIT["metre",1,AUTHORITY["EPSG","9001"]],PROJECTION["Polar_Stereographic"],PARAMETER["latitude_of_origin",70],PARAMETER["central_meridian",-45],PARAMETER["scale_factor",1],PARAMETER["false_easting",0],PARAMETER["false_northing",0],AUTHORITY["EPSG","3411"],AXIS["X",UNKNOWN],AXIS["Y",UNKNOWN]]
+  </SRS>
+    <GeoTransform> -3.8375000000000000e+06,  2.5000000000000000e+04,  0.0000000000000000e+00,  5.8375000000000000e+06,  0.0000000000000000e+00, -2.5000000000000000e+04</GeoTransform>
+ 
+</VRTDataset>

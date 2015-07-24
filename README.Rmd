@@ -1,0 +1,46 @@
+---
+output:
+  md_document:
+    variant: markdown_github
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, echo = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "readmefigs/README-"
+)
+```
+
+# NSIDC-seaice
+
+NSIDC sea ice
+
+Southern Hemisphere
+
+ftp://sidads.colorado.edu/pub/DATASETS/nsidc0051_gsfc_nasateam_seaice/final-gsfc/south/daily/2013/nt_20130114_f17_v01_s.bin
+
+Northern Hemisphere
+
+ftp://sidads.colorado.edu/pub/DATASETS/nsidc0051_gsfc_nasateam_seaice/final-gsfc/north/daily/2013/nt_20130105_f17_v01_n.bin
+
+```{r}
+## packages for read/plot/coast data
+library(raster)
+library(rgdal)
+library(maptools)
+data(wrld_simpl)
+
+## northern hemisphere
+north <- raster("nt_20130105_f17_v01_n.vrt")
+plot(north)
+plot(spTransform(wrld_simpl, projection(north)), add = TRUE)
+
+## southern hemisphere
+south <- raster("nt_20130114_f17_v01_s.vrt")
+plot(south)
+plot(spTransform(wrld_simpl, projection(south)), add = TRUE)
+
+```
