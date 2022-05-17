@@ -1,0 +1,79 @@
+{
+  "stac_version": "1.0.0-beta.2",
+  "stac_extensions": [
+    "view",
+    "projection"
+  ],
+  "type": "Feature",
+  "id": "MIKE_FAKED_IT_nt_20130114_f17_v01_s",
+  "collection": "nsidc",
+  "links": [
+    {
+      "rel": "self",
+      "href": "s3://sentinel-s2-l2a-catalog/tiles/35/V/MK/2018/6/5/0/stac_nsidc.json"
+    },
+    {
+      "rel": "root",
+      "href": "https://faker"
+    },
+    {
+      "rel": "collection",
+      "href": "https://faker"
+    }
+  ],
+  "bbox": [
+    25.0815883093,
+    62.1306897126,
+    27.1935425597,
+    63.1293872370
+  ],
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -105.160846396,
+          39.1656009422
+        ],
+        [
+          -104.947574355,
+          39.1750024943
+        ],
+        [
+          -104.949890373,
+          39.0512153242
+        ],
+        [
+          -105.161151214,
+          39.0436821016
+        ],
+        [
+          -105.160846396,
+          39.1656009422
+        ]
+      ]
+    ]
+  },
+  "properties": {
+    "datetime": "2013-01-14T00:00:00Z",
+    "platform": "fake",
+    "gsd": 1,
+    "proj:epsg": 3031,
+    "eo:cloud_cover": 0,
+    "view:sun_azimuth" : 0
+  },
+  "collection": "stac-test",
+  "assets": {
+    
+    "ICE_2013-01-14": {
+      "href": "https://github.com/mdsumner/NSIDC-seaice/raw/master/STAC/nt_20130114_f17_v01_s.tif",
+      "title": "Sea Ice concentration",
+      "type": "image/tif"
+    },
+    "MASK_2013-01-14": {
+      "href": "https://github.com/mdsumner/NSIDC-seaice/raw/master/STAC/nt_20130114_f17_v01_s.tif",
+      "title": "Sea Ice Concentration MASK",
+      "type": "image/tif"
+    }
+  }
+}
